@@ -92,6 +92,9 @@ Exact values of the parameters are individual for each engine.
 Datasets are configured in the [datasets/datasets.json](./datasets/datasets.json) file.
 Framework will automatically download the dataset and store it in the [datasets](./datasets/) directory.
 
+Put dataset here:
+vector-db-benchmark/datasets/glove-25-angular/glove-25-angular.hdf5
+
 ## How to implement a new engine?
 
 There are a few base classes that you can use to implement a new engine.
