@@ -39,8 +39,13 @@ Containers are expected to expose all necessary ports, so the client can connect
 Install dependencies:
 
 ```bash
+
+python3 -m pip install stopit typer qdrant_client redis weaviate-client httpx[socks]
+
 pip install poetry
 poetry install
+
+https[socks] is necessary when run the benchmark through a socks proxy to download datasets.
 ```
 
 Run the benchmark:
@@ -60,6 +65,9 @@ Options:
   --show-completion               Show completion for the current shell, to
                                   copy it or customize the installation.
   --help                          Show this message and exit.
+  
+$ export  PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+$ python3 -m run --engines *-m-16-* --datasets glove-*
 ```
 
 Command allows you to specify wildcards for engines and datasets.
