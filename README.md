@@ -67,7 +67,7 @@ Options:
   --help                          Show this message and exit.
   
 $ export  PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
-$ python3 -m run --engines *-m-16-* --datasets glove-*
+$ python3 -m run --engines qdrant-* --datasets glove-*
 ```
 
 Command allows you to specify wildcards for engines and datasets.
