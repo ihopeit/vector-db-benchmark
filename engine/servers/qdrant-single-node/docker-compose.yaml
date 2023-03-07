@@ -3,8 +3,11 @@ version: '3.7'
 services:
   qdrant_bench:
     image: qdrant/qdrant:v0.11.7
-    network_mode: host
+    ports:
+      - 6334:6334
+      - 6333:6333
+    #network_mode: host
     deploy:
       resources:
         limits:
-          memory: 25Gb
+          memory: 16Gb
